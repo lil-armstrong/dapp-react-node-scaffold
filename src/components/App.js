@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import logo from '../logo.png';
-import './App.css';
+import React, { Component } from "react";
+import logo from "../logo.png";
+import "./App.css";
 
 class App extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+        <nav className="flex p-5 border-b">
           <a
-            className="navbar-brand col-sm-3 col-md-2 mr-0"
+            className=""
             href="http://www.dappuniversity.com/bootcamp"
             target="_blank"
             rel="noopener noreferrer"
@@ -16,18 +16,19 @@ class App extends Component {
             Dapp University
           </a>
         </nav>
-        <div className="container-fluid mt-5">
-          <div className="row">
-            <main role="main" className="col-lg-12 d-flex text-center">
+        <div className="container mx-auto p-5">
+          <div className="flex flex-col items-center gap-5">
+            <a
+              href="http://www.dappuniversity.com/bootcamp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={logo} className="App-logo" alt="logo" />
+            </a>
+
+            <main role="main" className="text-center">
               <div className="content mr-auto ml-auto">
-                <a
-                  href="http://www.dappuniversity.com/bootcamp"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={logo} className="App-logo" alt="logo" />
-                </a>
-                <h1>Dapp University Starter Kit</h1>
+                <h1 className="text-2xl font-semibold">Dapp University Starter Kit</h1>
                 <p>
                   Edit <code>src/components/App.js</code> and save to reload.
                 </p>
@@ -37,7 +38,10 @@ class App extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  LEARN BLOCKCHAIN <u><b>NOW! </b></u>
+                  LEARN BLOCKCHAIN{" "}
+                  <u>
+                    <b>NOW!</b>
+                  </u>
                 </a>
               </div>
             </main>
